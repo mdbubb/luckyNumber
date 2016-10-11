@@ -9,8 +9,7 @@ public class Main {
 
         System.out.println("What is your name?");
         String name = input.next();
-        int u =0;
-        perfectSquare a = new perfectSquare(u);
+        perfectSquare a = new perfectSquare(0);
         System.out.println("Nice to meet you " + name + ", your lucky number is " + a.perfectRandom());
         System.out.println();
         System.out.println("Now type 0 to exit, type 1 to print out all the names and numbers so far, or type 2 to enter a number name");
@@ -21,9 +20,24 @@ public class Main {
         else if(num ==1){
             System.out.println("Your name is "+ name + " and the name is " + a.perfectRandom());
         }
-        else if (num ==2){
+        else if (num ==2) {
+            while (num == 2) {
+                System.out.println("What is your name?");
+                name = input.next();
+                a = new perfectSquare(0);
+                System.out.println("Nice to meet you " + name + ", your lucky number is " + a.perfectRandom());
+                System.out.println();
+                System.out.println("Now type 0 to exit, type 1 to print out all the names and numbers so far, or type 2 to enter a number name");
+                num = input.nextInt();
+                if (num ==0){
+                    System.out.println("Have a nice day!");
+                }
+                else if (num==1){
+                    System.out.println("Your name is "+ name + " and the name is " + a.perfectRandom());
 
-      }
+                }
+            }
 
+        }
     }
 }

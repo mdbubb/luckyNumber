@@ -3,9 +3,11 @@
  */
 public class perfectSquare {
 
-    public int c;
+
 
     public perfectSquare(int a) {
+
+
 
     }
 
@@ -14,4 +16,7 @@ public class perfectSquare {
         c = c * c;
         return c;
     }
+
+
+    public int c;
 }
